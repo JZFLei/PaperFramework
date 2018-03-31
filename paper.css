@@ -16,7 +16,9 @@
 :root {
     --font: 'Lato', sans-serif;
     --main: #9B4DCA;
+    --lightaccent: #D14BE1;
     --accent: #D747AA;
+    --darkaccent: #7F4BE1;
     --dark: #1F1F1F;
     --grey: #CECECE;
     --lightgrey: #EAEAEA;

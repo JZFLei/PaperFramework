@@ -13,6 +13,18 @@
     flex-wrap: wrap;
 }
 
+.row-top {
+    align-items: flex-start;
+}
+
+.row-middle {
+    align-items: center;
+}
+
+.row-bottom {
+    align-items: flex-end;
+}
+
 .column {
     flex-basis: 100%;
 }
@@ -21,4 +33,8 @@
     .column {
         flex: 1;
     }
+}
+
+.column-padded {
+    padding: 2rem;
 }
