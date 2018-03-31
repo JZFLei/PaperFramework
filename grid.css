@@ -1,0 +1,30 @@
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.container-padded {
+    padding: 3rem;
+}
+
+@media screen and (max-width: 480px) {
+    .container-padded {
+        padding: 1.5rem;
+    }
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.column {
+    flex-basis: 100%;
+}
+
+@media screen and (min-width: 480px) {
+    .column {
+        flex: 1;
+    }
+}

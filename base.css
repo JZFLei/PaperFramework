@@ -1,0 +1,41 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.5rem;
+    line-height: 1.6;
+    font-weight: 300;
+    font-family: var(--font);
+    color: var(--dark);
+    background-color: var(--light);
+}
+
+button,
+input {
+    vertical-align: top;
+}
+
+button,
+.button {
+    margin-bottom: 1rem;
+}
+
+input,
+textarea,
+select,
+fieldset {
+    margin-bottom: 1.5rem;
+}
+
+pre,
+blockquote,
+dl,
+figure,
+table,
+p,
+ul,
+ol,
+form {
+    margin-bottom: 2.5rem;
+}
