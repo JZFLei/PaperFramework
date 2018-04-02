@@ -3,7 +3,7 @@
     margin: 0 auto;
 }
 
-.container-padded {
+.container.container-padded {
     padding: 2rem;
 }
 
@@ -13,15 +13,15 @@
     flex-wrap: wrap;
 }
 
-.row-top {
+.row.row-top {
     align-items: flex-start;
 }
 
-.row-middle {
+.row.row-middle {
     align-items: center;
 }
 
-.row-bottom {
+.row.row-bottom {
     align-items: flex-end;
 }
 
@@ -35,6 +35,6 @@
     }
 }
 
-.column-padded {
+.column.column-padded {
     padding: 2rem;
 }
