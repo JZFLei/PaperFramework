@@ -6,6 +6,12 @@ To include in your project, place this in your `<head></head>` section.
 <link rel="stylesheet" type="text/css" href="paper.css" />
 ```
 
+To ensure this works properly, you will need to also include Normalize.css.
+
+```css
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" />
+```
+
 ## Modification
 The following CSS variables can be modified. This includes font import.
 
