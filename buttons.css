@@ -6,7 +6,7 @@ input[type="button"] {
     display: inline-block;
     height: 38px;
     padding: 0 30px;
-    color: var(--main);
+    color: var(--mainColour);
     text-align: center;
     font-size: 11px;
     font-weight: 700;
@@ -17,9 +17,17 @@ input[type="button"] {
     white-space: nowrap;
     background-color: transparent;
     border-radius: 4px;
-    border: 1px solid var(--main);
+    border: 1px solid var(--mainColour);
     cursor: pointer;
     box-sizing: border-box;
+}
+
+button:disabled,
+button[disabled] {
+    background-color: var(--neutralShade) !important;
+    border-color: var(--neutralShade) !important;
+    color: var(--lightShade) !important;
+    cursor: not-allowed !important;
 }
 
 button:hover,
@@ -32,8 +40,8 @@ button:focus,
 input[type="submit"]:focus,
 input[type="reset"]:focus,
 input[type="button"]:focus  {
-    color: var(--accent);
-    border-color: var(--accent);
+    color: var(--accentColour);
+    border-color: var(--accentColour);
     outline: none;
 }
 
@@ -42,9 +50,9 @@ button.button-primary,
 input[type="submit"].button-primary,
 input[type="reset"].button-primary,
 input[type="button"].button-primary {
-    color: var(--light);
-    background-color: var(--main);
-    border-color: var(--main);
+    color: var(--lightShade);
+    background-color: var(--mainColour);
+    border-color: var(--mainColour);
 }
 
 button.button-primary:hover,
@@ -57,8 +65,8 @@ button.button-primary:focus,
 input[type="submit"].button-primary:focus,
 input[type="reset"].button-primary:focus,
 input[type="button"].button-primary:focus {
-    background-color: var(--accent);
-    border-color: var(--accent);
+    background-color: var(--accentColour);
+    border-color: var(--accentColour);
 }
 
 button.button-secondary,
@@ -66,9 +74,9 @@ button.button-secondary,
 input[type="submit"].button-secondary,
 input[type="reset"].button-secondary,
 input[type="button"].button-secondary {
-    color: var(--light);
-    background-color: var(--accent);
-    border-color: var(--accent);
+    color: var(--lightShade);
+    background-color: var(--accentColour);
+    border-color: var(--accentColour);
 }
 
 button.button-secondary:hover,
@@ -81,6 +89,6 @@ button.button-secondary:focus,
 input[type="submit"].button-secondary:focus,
 input[type="reset"].button-secondary:focus,
 input[type="button"].button-secondary:focus {
-    background-color: var(--main);
-    border-color: var(--main);
+    background-color: var(--mainColour);
+    border-color: var(--mainColour);
 }

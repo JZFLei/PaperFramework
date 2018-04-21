@@ -1,22 +1,17 @@
-/* Misc */
 hr {
     max-width: 960px;
     margin-top: 3rem;
     margin-bottom: 3.5rem;
     border-width: 0;
-    border-top: 1px solid var(--lightgrey);
+    border-top: 1px solid var(--neutralShade);
 }
 
-img.image-responsive {
+img {
     height: auto;
     width: 100%;
+    margin: 2rem;
 }
 
-img.image-padded {
-    padding: 2rem;
-}
-
-/* Utilities */
 .full-width {
     width: 100%;
     box-sizing: border-box;

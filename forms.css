@@ -9,19 +9,19 @@ textarea,
 select {
     height: 38px;
     padding: 6px 10px;
-    background-color: var(--light);
-    border: 1px solid var(--grey);
+    background-color: var(--lightShade);
+    border: 1px solid var(--neutralShade);
     border-radius: 4px;
     box-shadow: none;
     box-sizing: border-box;
 }
 
 .input-light {
-    border-color: var(--light) !important;
+    border-color: var(--lightShade) !important;
 }
 
 .input-light:focus {
-    border-color: var(--accent) !important;
+    border-color: var(--accentColour) !important;
 }
 
 input[type="email"],
@@ -52,7 +52,7 @@ input[type="url"]:focus,
 input[type="password"]:focus,
 textarea:focus,
 select:focus {
-    border: 1px solid var(--accent);
+    border: 1px solid var(--accentColour);
     outline: none;
 }
 

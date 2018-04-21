@@ -1,23 +1,21 @@
 html {
     font-size: 62.5%;
+    text-rendering: optimizeLegibility;
 }
 
 body {
     font-size: 1.5rem;
     line-height: 1.6;
     font-weight: 300;
-    font-family: var(--font);
-    color: var(--dark);
-    background-color: var(--light);
+    font-family: var(--mainFont);
+    color: var(--darkShade);
+    background-color: var(--lightShade);
 }
 
 button,
+.button,
 input {
     vertical-align: top;
-}
-
-button,
-.button {
     margin-bottom: 1rem;
 }
 

@@ -72,15 +72,16 @@ h6 {
 }
 
 p {
+    font-size: 1.8rem;
     margin-top: 0;
 }
 
 a {
-    color: var(--main);
+    color: var(--mainColour);
 }
 
 a:hover {
-    color: var(--accent);
+    color: var(--accentColour);
 }
 
 small,
@@ -98,18 +99,34 @@ em,
     font-weight: 200;
 }
 
-.text-left {
+.text-align-left {
     text-align: left;
 }
 
-.text-center {
+.text-align-center {
     text-align: center;
 }
 
-.text-right {
+.text-align-right {
     text-align: right;
 }
 
-.text-justify {
+.text-align-justify {
+    text-align: justify;
+}
+
+.text-responsive-align-left {
+    text-align: left;
+}
+
+.text-responsive-align-center {
+    text-align: center;
+}
+
+.text-responsive-align-right {
+    text-align: right;
+}
+
+.text-responsive-align-justify {
     text-align: justify;
 }
