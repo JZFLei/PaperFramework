@@ -96,7 +96,11 @@ strong,
 
 em,
 .text-italic {
-    font-weight: 200;
+    font-weight: 300;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
 }
 
 .text-align-left {

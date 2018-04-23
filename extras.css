@@ -30,6 +30,10 @@ img {
     float: left;
 }
 
+.pull-center {
+    margin: auto auto;
+}
+
 .invert {
     filter: invert(1);
 }

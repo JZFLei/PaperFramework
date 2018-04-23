@@ -1,0 +1,291 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Paper: Responsive CSS Framework</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" />
+        <link rel="stylesheet" type="text/css" href="paper.css" />
+
+        <style>
+            .hero {
+                position: relative;
+                height: 50vh;
+                width: 100%;
+                padding-top: 3rem;
+            }
+
+            .hero-content {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        </style>
+    </head>
+    <body>
+        <header class="hero">
+            <div class="hero-content">
+                <div class="container container-padded">
+                    <div class="row">
+                        <div class="column column-padded text-align-center">
+                            <h1>A lightweight, responsive framework.</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <hr />
+        <section>
+            <div class="container container-padded">
+                <div class="row">
+                    <div class="column column-padded">
+                        <h3>Grid.</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="column column-padded">
+                        <p>
+                            The grid is built on flex-box and has a <code>max-width</code> of <code>960px</code> with a breakpoint at <code>480px</code>. You can have any number of rows and columns and the grid will size them evenly. You can also nest rows within columns and the grid will not break. The <code>max-width</code> can be changed with one line of CSS and there is even a class to provide a full width overide. Using flex-box as the basis of the grid system allows for simple and clean coding.
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="column column-padded text-align-center">
+                        <div class="row">
+                            <div class="column">
+                                <p>100%</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="column">
+                                <p>50%</p>
+                            </div>
+                            <div class="column">
+                                <p>50%</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="column">
+                                <p>33%</p>
+                            </div>
+                            <div class="column">
+                                <p>33%</p>
+                            </div>
+                            <div class="column">
+                                <p>33%</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="column">
+                                <p>25%</p>
+                            </div>
+                            <div class="column">
+                                <p>25%</p>
+                            </div>
+                            <div class="column">
+                                <p>25%</p>
+                            </div>
+                            <div class="column">
+                                <p>25%</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="column">
+                                <p>20%</p>
+                            </div>
+                            <div class="column">
+                                <p>20%</p>
+                            </div>
+                            <div class="column">
+                                <p>20%</p>
+                            </div>
+                            <div class="column">
+                                <p>20%</p>
+                            </div>
+                            <div class="column">
+                                <p>20%</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column column-padded">
+                    <pre class="pull-center" style="max-width: 960px;">
+                        <code style="white-space: pre-wrap;">
+&lt;!-- .container is the main wrapper. --&gt;
+&lt;div class="container"&gt;
+
+    &lt;!-- .row should contain columns. --&gt;
+    &lt;div class="row"&gt;
+
+        &lt;!-- .columns should be the immediate child of .row. --&gt;
+        &lt;div class="column"&gt;
+                
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- .row can be nested in a .column without issue. --&gt;
+                        </code>
+                    </pre>
+                </div>
+            </div>
+        </section>
+        <hr />
+        <section>
+            <div class="container container-padded">
+                <div class="row">
+                    <div class="column column-padded">
+                        <h3>Typography.</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="column column-padded">
+                        <p>
+                            The font size is all set using <code>rems</code> and bases the root <code>font-size</code> at <code>62.5%</code>. Using <code>rems</code> allows for better responsive support accross devices.
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="column column-padded">
+                        <p>
+                            <strong>The typography base</strong> is <a href="https://fonts.google.com/specimen/Lato" target="_blank">Lato</a> served by Google. It's set at <code>1.5rem</code> over a <code>1.6</code> line height. All basic tags like <a>anchors</a>, <strong>strong</strong>, <em>emphasis</em>, and <u>underline</u> are included.
+                        </p>
+                        <p>
+                            <strong>Headings</strong> are defined as well. Each with it's own <code>letter-spacing</code>, <code>line-height</code>, and <code>margin</code>/<code>padding</code>.
+                        </p>
+                    </div>
+                    <div class="column column-padded">
+                        <h1>Heading 1</h1>
+                        <h2>Heading 2</h2>
+                        <h3>Heading 3</h3>
+                        <h4>Heading 4</h4>
+                        <h5>Heading 5</h5>
+                        <h6>Heading 6</h6>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="column column-padded">
+                        <pre class="pull-center" style="max-width: 960px;">
+                            <code style="white-space: pre-wrap;">
+&lt;!-- Headings from h1 through to h6. --&gt;
+&lt;h1&gt;Heading 1&lt;/h1&gt;
+&lt;h2&gt;Heading 2&lt;/h2&gt;
+&lt;h3&gt;Heading 3&lt;/h3&gt;
+&lt;h4&gt;Heading 4&lt;/h4&gt;
+&lt;h5&gt;Heading 5&lt;/h5&gt;
+&lt;h5&gt;Heading 6&lt;/h6&gt;
+
+&lt;!-- Paragraphs --&gt;
+&lt;p&gt;This is a paragraph tag.&lt;/p&gt;
+
+&lt;!-- Other basic text tags. --&gt;
+&lt;a&gt;Anchor&lt;/a&gt;
+&lt;strong&gt;Strong&lt;/strong&gt;
+&lt;em&gt;Emphasis&lt;/em&gt;
+&lt;u&gt;Underline&lt;/u&gt;
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr />
+        <section>
+            <div class="container container-padded">
+                <div class="row">
+                    <div class="column column-padded">
+                        <h3>Buttons.</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="column column-padded">
+                        <p>
+                            <strong>Buttons</strong> are included and come in 3 different flavours: plain, primary, and secondary. The colours can be configured in <code>paper.css</code> like all other coloured elements in Paper.
+                        </p>
+                    </div>
+                </div>
+                <div class="row text-align-center" style="padding-left: 2rem; padding-right: 2rem">
+                    <div class="column">
+                        <a class="button">Anchor Button</a>
+                    </div>
+                    <div class="column">
+                        <button class="button">Button Element</button>
+                    </div>
+                    <div class="column">
+                        <input class="button" type="submit" value="Submit Input" />
+                    </div>
+                    <div class="column">
+                        <input class="button" type="button" value="Button Input" />
+                    </div>
+                </div>
+                <div class="row text-align-center" style="padding-left: 2rem; padding-right: 2rem">
+                    <div class="column">
+                        <a class="button button-primary">Anchor Button</a>
+                    </div>
+                    <div class="column">
+                        <button class="button button-primary">Button Element</button>
+                    </div>
+                    <div class="column">
+                        <input class="button button-primary" type="submit" value="Submit Input" />
+                    </div>
+                    <div class="column">
+                        <input class="button button-primary" type="button" value="Button Input" />
+                    </div>
+                </div>
+                <div class="row text-align-center" style="padding-left: 2rem; padding-right: 2rem">
+                    <div class="column">
+                        <a class="button button-secondary">Anchor Button</a>
+                    </div>
+                    <div class="column">
+                        <button class="button button-secondary">Button Element</button>
+                    </div>
+                    <div class="column">
+                        <input class="button button-secondary" type="submit" value="Submit Input" />
+                    </div>
+                    <div class="column">
+                        <input class="button button-secondary" type="button" value="Button Input" />
+                    </div>
+                </div>
+                    <div class="row">
+                        <div class="column column-padded">
+                            <pre class="pull-center" style="max-width: 960px;">
+                                <code style="white-space: pre-wrap;">
+&lt;!-- Plain buttons. --&gt;
+&lt;a class="button"&gt;Anchor Button&lt;/a&gt;
+&lt;button class="button"&gt;Button Element&lt;/button&gt;
+&lt;input class="button" type="submit" value="Submit Input" /&gt;
+&lt;input class="button" type="button" value="Button Input" /&gt;
+
+&lt;!-- Primary buttons. --&gt;
+&lt;a class="button button-primary"&gt;Anchor Button&lt;/a&gt;
+&lt;button class="button button-primary"&gt;Button Element&lt;/button&gt;
+&lt;input class="button button-primary" type="submit" value="Submit Input" /&gt;
+&lt;input class="button button-primary" type="button" value="Button Input" /&gt;
+
+&lt;!-- Secondary buttons. --&gt;
+&lt;a class="button button-secondary"&gt;Anchor Button&lt;/a&gt;
+&lt;button class="button button-secondary"&gt;Button Element&lt;/button&gt;
+&lt;input class="button button-secondary" type="submit" value="Submit Input" /&gt;
+&lt;input class="button button-secondary" type="button" value="Button Input" /&gt;
+                                </code>
+                            </pre>
+                        </div>
+                    </div>
+            </div>
+        </section>
+        <hr />
+        <section>
+            <div class="container container-padded">
+                <div class="row">
+                    <div class="column column-padded">
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>
