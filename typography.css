@@ -124,13 +124,13 @@ em,
 }
 
 .text-responsive-align-center {
-    text-align: center;
+    text-align: left;
 }
 
 .text-responsive-align-right {
-    text-align: right;
+    text-align: left;
 }
 
 .text-responsive-align-justify {
-    text-align: justify;
+    text-align: left;
 }
